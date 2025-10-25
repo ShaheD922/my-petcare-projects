@@ -15,7 +15,7 @@ const AuthLayout = () => {
         <Outlet />
       </main>
       <Footer />
-      {/* Single ToastContainer */}
+    
       <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );

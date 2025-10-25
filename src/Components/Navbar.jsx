@@ -39,6 +39,7 @@ const Navbar = () => {
         </SwiperSlide>
 
         {/* Slide 2 */}
+
         <SwiperSlide>
           <div className="relative w-full h-[400px]">
             <img
@@ -61,6 +62,7 @@ const Navbar = () => {
         </SwiperSlide>
 
         {/* Slide 3 */}
+        
         <SwiperSlide>
           <div className="relative w-full h-[400px]">
             <img

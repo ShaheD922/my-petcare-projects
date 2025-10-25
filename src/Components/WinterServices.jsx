@@ -2,9 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router";
 import LoadingPage from "./LoadingPage";
 import { AuthContext } from "../provider/AuthProvider";
-// Animate.css import
 import "animate.css";
-
 const WinterServices = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -29,9 +27,12 @@ const WinterServices = () => {
   if (loading) 
     return <LoadingPage />;
 
-  const displayedServices = showAll ? services : services.slice(0, 9);
+  const displayedServices = showAll 
+  ? services 
+  : services.slice(0, 9);
 
-  const handleViewDetails = (id) => {
+  const handleViewDetails = (id) => 
+    {
     if (!user) {
       navigate("/auth/login", { state: { from: `/service/${id}` } });
     } else {

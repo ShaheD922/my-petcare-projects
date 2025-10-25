@@ -7,12 +7,12 @@ const accessories = [
 
 const PetAccessories = () => (
   <section className="container mx-auto py-12">
-    <h2 className="text-3xl font-bold mb-8 text-center">Winter Accessories for Pets</h2>
+    <h2 className="text-3xl font-bold mb-8 text-center text-green-700">Winter Accessories for Pets</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {accessories.map(item => (
-        <div key={item.id} className="border rounded-xl shadow-lg p-4 text-center hover:shadow-2xl transition">
+        <div key={item.id} className="border border-gray-300 rounded-xl shadow-lg p-4 text-center hover:shadow-2xl transition">
           <img src={item.image} alt={item.name} className="w-full h-48 object-cover rounded mb-4"/>
-          <h3 className="text-xl font-semibold">{item.name}</h3>
+          <h3 className="text-xl font-semibold text-gray-600">{item.name}</h3>
         </div>
       ))}
     </div>

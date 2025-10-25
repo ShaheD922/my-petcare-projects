@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router";
 import LoadingPage from "../Components/LoadingPage";
 import { toast, ToastContainer, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// Import Animate.css
+
 import "animate.css";
 import BookServiceForm from "../Components/BookServiceForm";
 
@@ -47,10 +47,9 @@ const ServiceDetails = () => {
 
   return (
     <div className="container mx-auto py-12 space-y-8">
-      {/* Toast Container */}
+     
       <ToastContainer limit={2} newestOnTop={true} closeOnClick pauseOnHover />
-
-      {/* Image Section */}
+{/*  */}
       <div className="flex justify-center mb-8 animate__animated animate__backInLeft">
         <img
           src={service.image}
@@ -59,7 +58,7 @@ const ServiceDetails = () => {
         />
       </div>
 
-      {/* Service Card with Animate.css */}
+     
       <div className="bg-white shadow-xl rounded-2xl p-8 md:w-1/2 mx-auto space-y-4 border border-gray-100 hover:shadow-2xl transition-shadow duration-300 animate__animated animate__backInLeft">
         <h2 className="text-3xl font-bold text-center text-green-700 mb-4">
           {service.serviceName}
@@ -98,7 +97,7 @@ const ServiceDetails = () => {
 
    <BookServiceForm serviceName={service.serviceName} />
 
-        {/* Back Button */}
+     
         <button
           onClick={handleBack}
           className="bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold px-4 py-2 rounded-lg hover:opacity-90 w-full mt-6 transition-all duration-200"
@@ -111,3 +110,4 @@ const ServiceDetails = () => {
 };
 
 export default ServiceDetails;
+//

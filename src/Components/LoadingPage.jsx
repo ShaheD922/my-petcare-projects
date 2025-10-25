@@ -59,7 +59,8 @@ const LoadingPage = () => {
           </motion.h1>
         </motion.div>
 
-        {/* Dot Loader */}
+      
+
         <motion.div className="flex justify-center space-x-2 mt-8">
           {[0, 1, 2].map((index) => (
             <motion.div

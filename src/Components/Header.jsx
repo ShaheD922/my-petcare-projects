@@ -5,7 +5,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { Link } from "react-router";
-import { toast } from "react-toastify"; // ✅ Add this
+import { toast } from "react-toastify"; 
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);

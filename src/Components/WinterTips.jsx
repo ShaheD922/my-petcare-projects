@@ -11,14 +11,14 @@ const winterTips = [
 const WinterTips = () => (
   <section className="bg-gray-100 py-12">
     <div className="container mx-auto">
-      <h2 className="text-3xl font-bold mb-10 text-center">
+      <h2 className="text-3xl font-bold mb-10 text-center text-green-700">
         Winter Care Tips for Pets
       </h2>
 
-      {/* flex layout */}
+      
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
 
-        {/* Image left */}
+        
         <div className="md:w-1/2 w-full flex justify-center">
           <img
             src="https://i.ibb.co.com/wh6LL29K/real-estate-partners-e-LZQz-AFzy-Uc-unsplash.jpg"
@@ -27,7 +27,7 @@ const WinterTips = () => (
           />
         </div>
 
-        {/* List right */}
+     
         <div className="md:w-1/2 w-full">
           <ul className="list-disc list-inside space-y-4 text-gray-700 text-lg">
             {winterTips.map((tip) => (
