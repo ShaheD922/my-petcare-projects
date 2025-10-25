@@ -33,7 +33,7 @@ const BookServiceForm = ({ serviceName }) => {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-      
+
       <button
         type="submit"
         className="btn btn-primary w-full animate__animated animate__backInUp"
@@ -45,3 +45,4 @@ const BookServiceForm = ({ serviceName }) => {
 };
 
 export default BookServiceForm;
+//
