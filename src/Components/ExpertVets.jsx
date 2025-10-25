@@ -7,19 +7,21 @@ const expertVets = [
   { id: 3, name: "Dr. Jhankar Mahbub", specialization: "Exotic Pets", image: "https://i.ibb.co.com/JwhpVwLm/usman-yousaf-p-Trhfmj2j-DA-unsplash.jpg" },
 ];
 
-const ExpertVets = () => {
+const ExpertVets = () => 
+  {
   const navigate = useNavigate();
-
-  const handleViewDetails = (id) => {
+  const handleViewDetails = (id) => 
+  {
     navigate(`/doctor/${id}`);
   };
 
   return (
     <section className="container mx-auto py-12">
-      <h2 className="text-3xl font-bold mb-8 text-center">Meet Our Expert Vets</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center text-green-700">Meet Our Expert Vets</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {expertVets.map((vet) => (
-          <div key={vet.id} className="border rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition">
+        {expertVets.map((vet) => 
+        (
+          <div key={vet.id} className="border border-gray-300 rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition cursor-pointer">
             <img src={vet.image} alt={vet.name} className="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
             <h3 className="text-xl font-semibold">{vet.name}</h3>
             <p className="text-gray-600">{vet.specialization}</p>
