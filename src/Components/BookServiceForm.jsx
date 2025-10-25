@@ -11,7 +11,7 @@ const BookServiceForm = ({ serviceName }) => {
     setName("");
     setEmail("");
 
-    
+
   };
 
   return (
@@ -24,6 +24,7 @@ const BookServiceForm = ({ serviceName }) => {
         onChange={(e) => setName(e.target.value)}
         required
       />
+
       <input
         type="email"
         placeholder="Your Email"
@@ -32,6 +33,7 @@ const BookServiceForm = ({ serviceName }) => {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
+      
       <button
         type="submit"
         className="btn btn-primary w-full animate__animated animate__backInUp"
